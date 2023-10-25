@@ -462,7 +462,12 @@
     "meta": {
       "version": 3
     },
-    "net_colors": null,
+    "net_colors": {
+      "/Keyboard/Col 11": "rgb(255, 247, 2)",
+      "/Keyboard/Col 12": "rgb(254, 255, 0)",
+      "/Keyboard/Col 7": "rgb(255, 254, 22)",
+      "/Keyboard/Col 9": "rgb(255, 250, 1)"
+    },
     "netclass_assignments": null,
     "netclass_patterns": []
   },
