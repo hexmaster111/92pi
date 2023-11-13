@@ -1833,6 +1833,10 @@
     (stroke (width 0) (type solid))
     (uuid 98e34181-0705-4f95-afc9-00f869ebaab7)
   )
+  (wire (pts (xy 477.52 248.285) (xy 481.965 248.285))
+    (stroke (width 0) (type default))
+    (uuid 98eea933-7642-40d5-9e40-da0ce7dfad7b)
+  )
   (wire (pts (xy 610.87 375.92) (xy 630.555 375.92))
     (stroke (width 0) (type default))
     (uuid 99d66352-ae81-4d16-a512-13344ade93d1)
@@ -2639,6 +2643,10 @@
   (hierarchical_label "LED_G" (shape input) (at 574.675 281.305 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 27990819-e372-4b8f-8b57-2353514f392c)
+  )
+  (hierarchical_label "+3.3" (shape input) (at 481.965 248.285 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid 384ffeea-d433-45b9-b488-687a73976084)
   )
   (hierarchical_label "LED_B" (shape input) (at 574.675 278.765 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
@@ -4033,6 +4041,36 @@
       (project "92pi"
         (path "/6de8b922-75ab-426d-b031-f6a8fb5afbd4/2c2ae168-07bb-4d27-9d98-1a1b7c46cec2"
           (reference "SW9") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:+3.3V") (at 477.52 248.285 0) (mirror y) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 3eb7043c-1dfe-4bd6-8be2-c3cf1096a451)
+    (property "Reference" "#PWR060" (at 477.52 252.095 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "+3.3V" (at 477.52 244.475 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 477.52 248.285 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 477.52 248.285 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid ad2a9d8f-a8ad-4be9-b46d-76b5a79ae317))
+    (instances
+      (project "92pi"
+        (path "/6de8b922-75ab-426d-b031-f6a8fb5afbd4/2c2ae168-07bb-4d27-9d98-1a1b7c46cec2"
+          (reference "#PWR060") (unit 1)
+        )
+      )
+      (project "beepy"
+        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/832ef58d-0dd2-4973-9055-9966f4d0abfc"
+          (reference "#PWR0114") (unit 1)
         )
       )
     )
